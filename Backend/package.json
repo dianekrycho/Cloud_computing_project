@@ -1,0 +1,35 @@
+{
+  "name": "secure-web-dev-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "import": "node import-data.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RochMoreau/secure-web-dev-workshop3.git"
+  },
+  "author": "Roch Moreau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RochMoreau/secure-web-dev-workshop3/issues"
+  },
+  "homepage": "https://github.com/RochMoreau/secure-web-dev-workshop3#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.6.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}

@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    volumes:
+      #The first bind mounts is the folder containing the script to seed our database
+        - ./fill-db.js:/docker-entrypoint-initdb.d/fill-db.js
+        - project-db:/data/db
+    networks:
+      - cloud-project-network
+    #We execute the script to seed our database when the container start
+    #command: mongod; /bin/bash /docker-entrypoint-initdb.d/seed.sh
+
+  back:
+    container_name: back
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/
+      - JWT_SECRET=Diane
+    build:
+      context: ./backend
+    depends_on:
+      - mongodb
+    ports:
+      - 3000:3000
+    networks:
+      - cloud-project-network
+
+  front:
+    container_name: front
+    build:
+      context: ./frontend
+    ports:
+      - 4173:4173
+    depends_on:
+      - back
+    networks:
+      - cloud-project-network
+
+
+volumes:
+  project-db:
+
+networks:
+  cloud-project-network:
+
