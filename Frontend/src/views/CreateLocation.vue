@@ -71,7 +71,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        await axios.post('https://localhost:3000', {
+        await axios.post('http://localhost:3000', {
           filmName: this.filmName,
           filmType: this.filmType,
           filmDirectorName: this.filmDirectorName,

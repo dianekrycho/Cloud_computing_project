@@ -52,7 +52,7 @@ export default {
     },
     async deleteLocation(){
       try {
-        await axios.delete(`https://localhost:3000/locations/${this.locationId}`, {
+        await axios.delete(`http://localhost:3000/locations/${this.locationId}`, {
           headers: {
             Authorization: `Bearer ${this.token}`,
           }

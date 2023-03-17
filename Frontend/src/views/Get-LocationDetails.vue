@@ -20,7 +20,7 @@ export default {
   methods: {
     ...mapActions(['setLocationDetails']),
     async fetchLocationDetails() {
-      const response= await axios.get(`https://localhost:3000/locations/${this.locationId}`, {
+      const response= await axios.get(`http://localhost:3000/locations/${this.locationId}`, {
         headers: {
           Authorization: `Bearer ${this.token}`,
         }

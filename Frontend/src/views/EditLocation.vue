@@ -99,7 +99,7 @@ export default {
     },
     async submitEditForm() {
       try {
-        await axios.patch(`https://localhost:3000/locations/${this.locationId}`, {
+        await axios.patch(`http://localhost:3000/locations/${this.locationId}`, {
           filmName: this.filmName,
           filmType: this.filmType,
           filmDirectorName: this.filmDirectorName,

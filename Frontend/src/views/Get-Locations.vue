@@ -21,7 +21,7 @@ export default {
     ...mapActions(['setLocations', 'setRole']),
     async get_locations() {
       try {
-        const response = await axios.get('https://localhost:3000/locations', {
+        const response = await axios.get('http://localhost:3000/locations', {
             headers:{
                 Authorization: `Bearer ${this.token}`,
             }           
@@ -35,7 +35,7 @@ export default {
     },
     async getRole(){
       try {
-        const response = await axios.get('https://localhost:3000/users/me', {
+        const response = await axios.get('http://localhost:3000/users/me', {
           headers: {
             Authorization: `Bearer ${this.token}`,
           }
