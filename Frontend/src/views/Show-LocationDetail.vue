@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h2>Name of the film : {{locationDetails.filmName}}</h2>
-    <h4>Type of the film : {{locationDetails.filmType}}</h4>
-    <h4>Name of the director : {{locationDetails.filmDirectorName}}</h4>
-    <h4>Name of the producer : {{locationDetails.filmProducerName}}</h4>
-    <h4>Addresse of the shoot : {{locationDetails.address}}</h4>
-    <h4>District of the shoot: {{locationDetails.district}}</h4>
-    <h4>Year of the shoot : {{locationDetails.year}}</h4>
+    <h2>Name of the film : {{locationDetails.nom_tournage}}</h2>
+    <h4>Type of the film : {{locationDetails.type_tournage}}</h4>
+    <h4>Name of the director : {{locationDetails.nom_realisateur}}</h4>
+    <h4>Name of the producer : {{locationDetails.nom_producteur}}</h4>
+    <h4>Addresse of the shoot : {{locationDetails.adresse_lieu}}</h4>
+    <h4>District of the shoot: {{locationDetails.ardt_lieu}}</h4>
+    <h4>Year of the shoot : {{locationDetails.annee_tournage}}</h4>
   </div>
   <br />
   <br />

@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const Location = require("./src/locations/locations.model");
 
-const filmingLocations = require("../lieux-de-tournage-a-paris.json");
+const filmingLocations = require("../mongo/locations.json");
 
 function buildLocation(filmingLocation) {
   return {

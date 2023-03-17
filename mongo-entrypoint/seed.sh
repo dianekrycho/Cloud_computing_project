@@ -1,1 +1,0 @@
-mongoimport --host localhost --db test --collection locations --jsonArray --file lieux-de-tournage-a-paris.json

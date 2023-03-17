@@ -8,12 +8,14 @@ services:
       #The first bind mounts is the folder containing the script to seed our database
       - ./mongo/mongo-entrypoint:/docker-entrypoint-initdb.d
       #The two others are the json files to seed our database
-      - ./mongo/lieux-de-tournage-a-paris.json:/lieux-de-tournage-a-paris.json
+      - ./mongo/locations.json:/locations.json
       #This is the volume to make the database persistent
       - location-db:/data/db
       #We connect the container to the bridge network
     networks:
       - cloud-project-network
+    #We execute the script to seed our database when the container start
+    command: mongod; /bin/bash /docker-entrypoint-initdb.d/seed.sh
 
   back:
     container_name: back

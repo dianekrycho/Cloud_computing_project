@@ -15,7 +15,7 @@
         </thead>
         <tbody>
           <tr v-for="item in paginatedData" :key="item.id">
-            <td>{{ item.filmName }}, in Paris {{item.district}}</td>
+            <td>{{ item.nom_tournage }}, in Paris {{item.ardt_lieu}}</td>
             <button @click="locationDetail(item._id)">see details</button>
           </tr>
         </tbody>

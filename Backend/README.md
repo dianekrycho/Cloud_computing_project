@@ -15,7 +15,7 @@ This repo contains an Express app, it will be the backend used for the semester.
 6. Install dependencies : `npm install`
 7. If you dont have data in your DB:
    1. Download the public dataset (OpenData) given by French gov and the city of Paris, named ["Lieux de tournage à Paris"](https://opendata.paris.fr/explore/dataset/lieux-de-tournage-a-paris/information)
-   2. Put the dataset at the root of this repository, named [lieux-de-tournage-a-paris.json](../lieux-de-tournage-a-paris.json)
+   2. Put the dataset at the root of this repository, named [lieux-de-tournage-a-paris.json](../mongo/locations.json)
    3. Run the import script with `npm run import`
 8. Run the backend `npm start`
 

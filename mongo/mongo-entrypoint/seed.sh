@@ -1,0 +1,1 @@
+mongoimport --host localhost --db test --collection locations --jsonArray --file locations.json
