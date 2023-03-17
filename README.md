@@ -8,4 +8,4 @@ clone the project from this URL https://github.com/dianekrycho/Cloud_computing_p
 
 Start the whole project on the background
 
-docker-compose up -d
+```docker-compose up -d```
